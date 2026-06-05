@@ -377,9 +377,7 @@ main {
   font-size: clamp(1.2rem, 2.3vw, 1.5rem);
 }
 
-.hero-section .lede,
-.hero-section .path-stack span,
-.hero-section .page-card p {
+.hero-section .lede {
   color: var(--dark-muted);
 }
 
@@ -441,6 +439,11 @@ main {
 
 .decision-panel {
   padding: 24px;
+  color: var(--ink);
+}
+
+.decision-panel .eyebrow {
+  color: var(--pop);
 }
 
 .path-stack {
@@ -467,6 +470,7 @@ main {
 }
 
 .path-stack strong {
+  color: var(--ink);
   font-family: var(--font-heading);
   font-size: 1.35rem;
 }
@@ -608,12 +612,17 @@ main {
 .page-card span,
 .quiet-proof span {
   display: inline-flex;
-  width: fit-content;
+  width: 132px;
+  height: 34px;
   align-items: center;
+  justify-content: center;
   border-radius: 999px;
-  padding: 5px 9px;
+  padding: 0 12px;
   background: var(--lime-soft);
   color: var(--navy);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .quick-card p,
@@ -630,6 +639,26 @@ main {
 
 .page-card {
   min-height: 190px;
+}
+
+.workshop-card-grid {
+  align-items: stretch;
+}
+
+.workshop-card-grid .page-card > span {
+  width: 172px;
+  height: 48px;
+  padding: 0 18px;
+}
+
+.section-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.section-action .button {
+  min-width: min(100%, 320px);
 }
 
 .page-card h3 {
