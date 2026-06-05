@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="smb-test">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Skills Store | CyplexAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="CyplexAI home"><span class="brand-wordmark" aria-hidden="true">Cyplex<span>AI</span></span><span class="brand-kicker">Business Skills Hub</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
+        <nav id="primaryNav" class="nav-list">
+          <a href="index.html">Home</a>
+          <a class="active" href="store.html">Business Skills Store</a>
+          <a href="courses.html">Courses</a>
+          <a href="workshops.html">Workshops</a>
+          
+          <a href="resources.html">Resources</a>
+          <a href="team.html">The Team</a><a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </aside>
+      <main>
+        <header class="topbar"><div><p class="eyebrow">Catalog</p><strong>The CyplexAI Business Skills Store</strong></div><a class="topbar-action" href="contact.html">Ask About Training</a></header>
+        <section class="page-hero">
+          <p class="eyebrow">Business Skills Store</p>
+          <h1>Practical AI and workflow courses for people doing real business work.</h1>
+          <p class="lede">Browse the envisioned catalog. Courses are marked Coming Soon or Planned until LearnWorlds links are ready.</p>
+        </section>
+        <section class="section-band store-preview">
+          <div class="toolbar" aria-label="Course filters">
+            <label><span>Search</span><input id="courseSearch" type="search" placeholder="Search courses, outcomes, audiences"></label>
+            <label><span>Category</span><select id="categoryFilter"><option value="all">All categories</option></select></label>
+            <label><span>Type</span><select id="typeFilter"><option value="all">All formats</option></select></label>
+          </div>
+          <div class="status-summary" id="statusSummary" aria-live="polite"></div>
+          <div class="course-grid" id="courseGrid"></div>
+        </section>
+      </main>
+    </div>
+    <script src="data/courses.js"></script>
+    <script src="data/site-content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
